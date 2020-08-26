@@ -31,19 +31,17 @@
                         </#if>
                     </a>
 					<div class="info-text">
-                    	<p>Theme is <a href="https://github.com/chakhsu/pinghsu" target="_blank">Pinghsu</a> by <a href="https://www.linpx.com/" target="_blank">Chakhsu</a></p>
-						<p>Powered by <a href="https://halo.run" target="_blank" rel="nofollow">Halo</a></p>
 						<p>&copy; ${.now?string("yyyy")} <a href="${blog_url!}">${blog_title!}</a></p>
                         <p><@global.footer /></p>
 					</div>
 				</div>
 			</div>
 			<div class="meta-item meta-posts">
-				<h3 class="meta-title">RECENT POSTS</h3>
+				<h3 class="meta-title">最新发布</h3>
                 <@fun.getRecentPosts 8/>
 			</div>
             <div class="meta-item meta-comments">
-                <h3 class="meta-title">RECENT COMMENTS</h3>
+                <h3 class="meta-title">最新评论</h3>
                 <@fun.getRecentComments 8 />
             </div>
 		</div>
